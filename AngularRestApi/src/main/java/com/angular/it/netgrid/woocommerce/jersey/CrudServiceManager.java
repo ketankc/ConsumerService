@@ -94,7 +94,7 @@ public class CrudServiceManager {
 	public static CrudService<ProductTag, Integer, Object> createProductTagService(Configuration config) {
 		return new ProductTagCrudService(CrudServiceManager.getWebTarget(config));
 	}
-	
+		
 	protected static WebTarget getWebTarget(Configuration config) {
 		WebTarget retval = targets.get(config);
 		if(retval == null) {
