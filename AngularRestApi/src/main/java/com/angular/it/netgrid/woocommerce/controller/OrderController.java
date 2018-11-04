@@ -23,5 +23,6 @@ public class OrderController {
 		Order order = crudService.read(7571, null);
 		System.out.println(order.getId());
 		return order;
+		
 	}
 }
